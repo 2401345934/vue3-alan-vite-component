@@ -14,6 +14,11 @@
     "preview": "vite preview",
     "prepare": "husky install"
   },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
   "files": [
     "lib"
   ],
