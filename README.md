@@ -51,11 +51,11 @@ declare module 'vue3-starry-sky';
 
 ## 局部引用方法
 
-示例：
+### StarrySky 示例
 
-``` html
+```tsx
 <script setup>
-import { StarrySky } from '../packages/index';
+import { StarrySky } from 'vue3-alan-vite-component';
 </script>
 
 <template>
@@ -63,4 +63,19 @@ import { StarrySky } from '../packages/index';
 </template>
 
 <style></style>
+```
+
+### DigitalScroll 示例
+
+```tsx
+<script setup>
+import { DigitalScroll } from 'vue3-alan-vite-component';
+</script>
+
+<template>
+ <digital-scroll targetNumber="{{1000}}" targetClass="class"></digital-scroll>
+</template>
+
+<style></style>
+
 ```
