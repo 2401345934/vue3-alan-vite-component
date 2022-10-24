@@ -73,7 +73,7 @@ import { DigitalScroll } from 'vue3-alan-vite-component';
 </script>
 
 <template>
- <digital-scroll targetNumber="{{1000}}" targetClass="class"></digital-scroll>
+ <digital-scroll :targetNumber="1000" targetClass="class"></digital-scroll>
 </template>
 
 <style></style>
