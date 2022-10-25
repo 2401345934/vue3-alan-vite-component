@@ -1,7 +1,7 @@
 {
-  "name": "vue3-alan-vite-component",
+  "name": "@xiaomh/vue3-alan-vite-component",
   "private": false,
-  "version": "0.1.5",
+  "version": "1.0.1",
   "keywords": [
     "xmh-cli-test"
   ],
@@ -13,6 +13,10 @@
     "publish": "npm publish",
     "preview": "vite preview",
     "prepare": "husky install"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "config": {
     "commitizen": {
@@ -42,8 +46,6 @@
     "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
