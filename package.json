@@ -1,7 +1,7 @@
 {
   "name": "@xiaomh/vue3-alan-vite-component",
   "private": false,
-  "version": "1.0.16",
+  "version": "1.0.17",
   "keywords": [
     "xmh-cli-test"
   ],
@@ -10,6 +10,7 @@
     "build": "vite build",
     "commit": "npm run changelog && git add . && git cz ",
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0",
+    "prepublish": "npm run build",
     "publish": "npm publish",
     "preview": "vite preview",
     "prepare": "husky install"
