@@ -14,8 +14,8 @@ npm i vue3-alan-vite-component
 //main.ts or main.js
 import { createApp } from 'vue';
 import App from './App.vue';
-import Vue3StarrySky from 'vue3-starry-sky';
-import 'vue3-starry-sky/lib/style.css';
+import Vue3StarrySky from 'vue3-alan-vite-component';
+import 'vue3-alan-vite-component/lib/style.css';
 
 const app = createApp(App);
 
@@ -34,7 +34,7 @@ declare module '*.vue' {
   export default component
 }
 
-declare module 'vue3-starry-sky';
+declare module 'vue3-alan-vite-component';
 ```
 
 组件内使用
