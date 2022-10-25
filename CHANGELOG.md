@@ -1,4 +1,4 @@
-## <small>1.0.12 (2022-10-25)</small>
+## <small>1.0.15 (2022-10-25)</small>
 
 * ✨新增: index.html 格式调整 ([f769afa](https://github.com/2401345934/vue3-alan-vite-component/commit/f769afa))
 * ✨新增(custom): 修改 vite 配置 ([0ccb107](https://github.com/2401345934/vue3-alan-vite-component/commit/0ccb107))
@@ -10,6 +10,7 @@
 * ✨新增(package): 修改 md ([c609134](https://github.com/2401345934/vue3-alan-vite-component/commit/c609134))
 * ✨新增(package): 增加 Button 组件 ([7d191c1](https://github.com/2401345934/vue3-alan-vite-component/commit/7d191c1))
 * ✨新增(packages/DigitalScroll): 引入 ts ([9579d53](https://github.com/2401345934/vue3-alan-vite-component/commit/9579d53))
+* 🐛修复(custom): 修复 button bug ([f4713d3](https://github.com/2401345934/vue3-alan-vite-component/commit/f4713d3))
 * 0.1.3版本发布 ([b09708d](https://github.com/2401345934/vue3-alan-vite-component/commit/b09708d))
 * 更新md ([0c4ca78](https://github.com/2401345934/vue3-alan-vite-component/commit/0c4ca78))
 * 修改提交代码配置 ([65dda81](https://github.com/2401345934/vue3-alan-vite-component/commit/65dda81))
