@@ -1,4 +1,4 @@
-<script setup name="DigitalScroll">
+<script setup name="DigitalScroll" lang="ts">
 import { onMounted } from 'vue';
 import DigitScroll from "./shard"
 

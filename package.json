@@ -6,7 +6,7 @@
     "xmh-cli-test"
   ],
   "scripts": {
-    "dev": "vite --force --host",
+    "start": "vite --force --host",
     "build": "vite build",
     "commit": "npm run changelog && git add . && git cz ",
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0",

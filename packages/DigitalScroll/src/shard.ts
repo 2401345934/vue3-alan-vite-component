@@ -1,5 +1,8 @@
 class DigitScroll {
-  constructor(options) {
+  container: any
+  rollHeight: number
+  numberArr: any[]
+  constructor(options: { container: string }) {
     //获取容器的DOM，没有则抛出错误
     this.container = document.querySelector(options.container);
     if (!this.container) {
@@ -11,7 +14,7 @@ class DigitScroll {
     this.rollHeight = parseInt(getComputedStyle(this.container).height) || 30;
     this.container.style.height = this.rollHeight + 'px';
   }
-  roll(num) {
+  roll(num: number) {
     // 将传入的要滚动的数字拆分后初始化每一位数字的容器
     this.initDigitEle(num);
     const numEles = this.container.querySelectorAll('.single-num');

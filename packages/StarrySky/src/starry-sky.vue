@@ -1,4 +1,4 @@
-<script setup name="StarrySky">
+<script setup name="StarrySky" lang="ts">
 import { ref, onMounted } from 'vue';
 
 const props = defineProps({
@@ -13,10 +13,10 @@ const props = defineProps({
 });
 
 //星星实体
-const star = ref();
+const star = ref<any[]>();
 
 onMounted(() => {
-	let starArr = star.value;
+	let starArr = star.value as any[];
 	starArr.forEach((item) => {
 		let speed = 0.1 + Math.random() * 1;
 		let thisDistance = props.distance + Math.random() * 300;
