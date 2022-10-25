@@ -1,9 +1,9 @@
-# [vue3-alan-vite-component](https://www.npmjs.com/package/vue3-alan-vite-component)
+# [@xiaomh/vue3-alan-vite-component](https://www.npmjs.com/package/@xiaomh/vue3-alan-vite-component)
 
 ## 组件下载
 
 ```js
-npm i vue3-alan-vite-component
+npm i @xiaomh/vue3-alan-vite-component
 ```
 
 ## 全局使用方法
@@ -14,8 +14,8 @@ npm i vue3-alan-vite-component
 //main.ts or main.js
 import { createApp } from 'vue';
 import App from './App.vue';
-import Vue3StarrySky from 'vue3-alan-vite-component';
-import 'vue3-alan-vite-component/lib/style.css';
+import Vue3StarrySky from '@xiaomh/vue3-alan-vite-component';
+import '@xiaomh/vue3-alan-vite-component/lib/style.css';
 
 const app = createApp(App);
 
@@ -34,7 +34,7 @@ declare module '*.vue' {
   export default component
 }
 
-declare module 'vue3-alan-vite-component';
+declare module '@xiaomh/vue3-alan-vite-component';
 ```
 
 组件内使用
@@ -55,7 +55,7 @@ declare module 'vue3-alan-vite-component';
 
 ```tsx
 <script setup>
-import { StarrySky } from 'vue3-alan-vite-component';
+import { StarrySky } from '@xiaomh/vue3-alan-vite-component';
 </script>
 
 <template>
@@ -69,7 +69,7 @@ import { StarrySky } from 'vue3-alan-vite-component';
 
 ```tsx
 <script setup>
-import { DigitalScroll } from 'vue3-alan-vite-component';
+import { DigitalScroll } from '@xiaomh/vue3-alan-vite-component';
 </script>
 
 <template>
