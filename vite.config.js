@@ -14,7 +14,7 @@ export default defineConfig({
 		outDir: 'lib',
 		lib: {
 			entry: resolve(__dirname, 'packages/index.js'),
-			name: 'Vue3StarrySky',
+			name: 'Vue3SAlanVite',
 			fileName: 'vue3-alan-vite-component',
 		},
 		rollupOptions: {
