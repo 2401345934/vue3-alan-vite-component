@@ -1,7 +1,7 @@
-import Button from './src/button.vue';
+import AlanButton from './src/button.vue';
 
-Button.install = (App) => {
-	App.component(Button.__name, Button);
+AlanButton.install = (App) => {
+	App.component(AlanButton.alanComponentName, Button);
 };
 
-export default Button;
+export default AlanButton;

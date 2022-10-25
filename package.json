@@ -1,7 +1,7 @@
 {
   "name": "@xiaomh/vue3-alan-vite-component",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.11",
   "keywords": [
     "xmh-cli-test"
   ],
@@ -27,11 +27,11 @@
     "lib"
   ],
   "main": "lib/vue3-alan-vite-component.umd.js",
-  "module": "lib/vue3-alan-vite-component.es.mjs",
+  "module": "lib/vue3-alan-vite-component.es.js",
   "exports": {
     "./lib/style.css": "./lib/style.css",
     ".": {
-      "import": "./lib/vue3-alan-vite-component.es.mjs",
+      "import": "./lib/vue3-alan-vite-component.es.js",
       "require": "./lib/vue3-alan-vite-component.umd.js"
     }
   },

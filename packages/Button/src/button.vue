@@ -1,4 +1,9 @@
-<script setup name="alan-button" lang="ts">
+<script lang="ts">
+export default {
+  alanComponentName: "AlanButton",
+};
+</script>
+<script setup name="AlanButton" lang="ts">
 defineProps({
   type: {
     type: String,

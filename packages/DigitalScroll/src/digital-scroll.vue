@@ -1,3 +1,8 @@
+<script lang="ts">
+export default {
+  alanComponentName: "DigitalScroll",
+};
+</script>
 <script setup name="DigitalScroll" lang="ts">
 import { onMounted } from 'vue';
 import DigitScroll from "./shard"

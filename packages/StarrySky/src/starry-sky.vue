@@ -1,3 +1,8 @@
+<script lang="ts">
+export default {
+  alanComponentName: "StarrySky",
+};
+</script>
 <script setup name="StarrySky" lang="ts">
 import { ref, onMounted } from 'vue';
 
