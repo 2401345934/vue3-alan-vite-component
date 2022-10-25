@@ -12,8 +12,7 @@ module.exports = {
     { value: '⏪回滚', name: '回滚:    代码回退' }
   ],
   scopes: [
-    { name: 'packages/DigitalScroll' },
-    { name: 'packages/StarrySky' },
+    { name: 'packages' },
     { name: 'public' },
     { name: 'tsconfig' },
     { name: 'package' },
