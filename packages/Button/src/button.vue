@@ -69,13 +69,6 @@ defineProps({
   border: none
 }
 
-.disabled {
-  color: #00000040;
-  border-color: #d9d9d9;
-  background: #f5f5f5;
-  text-shadow: none;
-  box-shadow: none;
-}
 
 .block {
   display: block;
@@ -88,5 +81,14 @@ defineProps({
   text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
   box-shadow: 0 2px #0000000b;
   color: #fff;
+}
+
+
+.disabled {
+  color: #00000040;
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
 }
 </style>
