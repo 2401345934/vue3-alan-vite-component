@@ -5,7 +5,6 @@ export default {
 </script>
 <script setup name="YuanWar" lang="ts" >
 import { onMounted } from 'vue';
-
 const props = defineProps({
 	width: {
 		type: Number,
@@ -212,7 +211,3 @@ onMounted(() => {
 <template>
   <canvas id='canvas'></canvas>
 </template>
-
-<style scoped lang="scss">
-
-</style>

@@ -8,9 +8,9 @@ import YuanWar from "./YuanWar"
 import "./styles/index.scss"
 
 //按需引入
-export { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer ,YuanWar};
+export { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer , YuanWar};
 
-const components = [StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar];
+const components = [StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar];
 
 const install = (App) => {
   components.forEach((item) => {
