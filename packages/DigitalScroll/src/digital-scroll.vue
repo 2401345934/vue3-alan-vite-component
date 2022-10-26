@@ -5,7 +5,7 @@ export default {
 </script>
 <script setup name="DigitalScroll" lang="ts">
 import { onMounted } from 'vue';
-import DigitScroll from "./shard"
+import { useDigitScroll } from "../../Shard"
 
 const props = defineProps({
 	targetNumber: {
@@ -20,7 +20,7 @@ const props = defineProps({
 
 onMounted(() => {
   // 初始化实例
-    const DigitScrollSource = new DigitScroll({
+    const DigitScrollSource = new useDigitScroll({
       container: '#digital-scroll',
       // container 要操作的DOM节点
     });

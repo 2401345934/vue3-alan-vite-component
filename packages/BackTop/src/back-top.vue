@@ -4,8 +4,8 @@ export default {
 };
 </script>
 <script setup name="AlanBackTop" lang="ts">
-import { useSlots, onMounted, onBeforeUnmount, ref,  } from 'vue';
-import { useThrottle, useGetScrollPosition, useScrollToTop } from "./shard"
+import { useSlots, onMounted, onBeforeUnmount, ref, } from 'vue';
+import { useThrottle, useGetScrollPosition, useScrollToTop } from "../../Shard"
 //判断<slot/>是否有传值
 const slotDefault = !!useSlots().default;
 const visibilityH = ref<boolean>(false)
@@ -20,7 +20,7 @@ const props = defineProps({
 const parentEmits = defineEmits(['goTopCompleteCb'])
 
 onMounted(() => {
-  window.addEventListener('scroll', useThrottle((e) => {
+  window.addEventListener('scroll', useThrottle(() => {
     scrollLoadMore()
   }, 250)) // 监听页面滚动
 })
@@ -42,9 +42,7 @@ const scrollLoadMore = () => {
   visibilityH.value = useGetScrollPosition().y >= props.visibilityHeight
 }
 
-
 </script>
-
 <template>
   <div class="alan-back-top"
        @click="handleBackTop">
@@ -97,6 +95,7 @@ const scrollLoadMore = () => {
   opacity: 0;
   transition: all .3s;
 }
+
 .visibilityH {
   opacity: 1;
 }
