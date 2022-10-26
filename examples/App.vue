@@ -1,10 +1,11 @@
 <script setup>
-import { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer } from '../packages/index';
+import { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar } from '../packages/index';
 
 const goTopCompleteCb = () => { }
 </script>
 
 <template>
+  <YuanWar></YuanWar>
   <starry-sky :stars-count="888"
               :distance="1000" />
   <TherMometer :show="true"
