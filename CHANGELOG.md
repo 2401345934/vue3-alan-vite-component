@@ -1,4 +1,4 @@
-## <small>1.0.17 (2022-10-25)</small>
+## <small>1.0.18 (2022-10-26)</small>
 
 * ✨新增: index.html 格式调整 ([f769afa](https://github.com/2401345934/vue3-alan-vite-component/commit/f769afa))
 * ✨新增(custom): 修改 vite 配置 ([0ccb107](https://github.com/2401345934/vue3-alan-vite-component/commit/0ccb107))
@@ -10,6 +10,7 @@
 * ✨新增(package): 新增自定义说明提交 ([db8e26b](https://github.com/2401345934/vue3-alan-vite-component/commit/db8e26b))
 * ✨新增(package): 修改 md ([c609134](https://github.com/2401345934/vue3-alan-vite-component/commit/c609134))
 * ✨新增(package): 增加 Button 组件 ([7d191c1](https://github.com/2401345934/vue3-alan-vite-component/commit/7d191c1))
+* ✨新增(packages): 新增 prepublish 每次 publish 之前自动 build ([1fa3129](https://github.com/2401345934/vue3-alan-vite-component/commit/1fa3129))
 * ✨新增(packages): codeBackgroundWall 背景墙组件 ([81e3fa6](https://github.com/2401345934/vue3-alan-vite-component/commit/81e3fa6))
 * ✨新增(packages/DigitalScroll): 引入 ts ([9579d53](https://github.com/2401345934/vue3-alan-vite-component/commit/9579d53))
 * 🐛修复(custom): 修复 button bug ([f4713d3](https://github.com/2401345934/vue3-alan-vite-component/commit/f4713d3))
