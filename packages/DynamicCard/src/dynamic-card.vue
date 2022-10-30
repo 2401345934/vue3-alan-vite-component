@@ -4,9 +4,9 @@ import { useRandomRgbColor } from "../../Shard"
 export default {
   alanComponentName: "DynamicCard",
   props: {
-    cardNumber: {
-      type: Number,
-      default: 10
+    cardList: {
+      type: Array,
+      default: []
     },
     // 0：列表
     // 1:乱序扇形
@@ -43,9 +43,9 @@ export default {
   },
   methods: {
     initData () {
-      const arr = new Array(this.cardNumber).fill(1);
+      const arr = new Array(this.cardList.length).fill(1);
       this.cards = arr.map((_, index) => {
-        return this.computedStyle(index, this.cardNumber);
+        return this.computedStyle(index, this.cardList.length || 0);
       });
     },
     resetData (style) {
@@ -117,7 +117,7 @@ export default {
              :key="index"
              :style="styles"
              @click="activeIndex = activeIndex === index ? -1 : index">
-          <span>Card {{ index + 1 }}</span>
+          <span class="text-span">{{cardList[index].text}}</span>
         </div>
       </div>
     </div>
@@ -144,7 +144,7 @@ export default {
   }
 
   .animation-card {
-    width: 200px;
+    min-width: 200px;
     background-color: var(--bg-color);
     border-radius: 8px;
     cursor: pointer;
@@ -161,6 +161,9 @@ export default {
     color: #ffffff;
     z-index: var(--card-index);
 
+    .text-span {
+      margin: 0 20px;
+    }
     &.is-list {
       animation: reject ease-in-out 0.4s;
 

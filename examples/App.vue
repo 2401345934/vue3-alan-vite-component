@@ -1,11 +1,27 @@
 <script setup>
-import { StarrySky, DynamicCard,DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar } from '../packages/index';
+import { StarrySky, DynamicCard,DigitalScroll, TakingPictures, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar } from '../packages/index';
+import { ref } from 'vue';
 
+const cardList = ref([
+  {
+    text:'哈喽哈喽哈喽哈喽1'
+  },
+  {
+    text:'哈喽哈喽哈喽哈喽2'
+  },
+  {
+    text:'哈喽哈喽哈喽哈喽21'
+  },
+  {
+    text:'哈喽哈喽哈喽哈喽31'
+  },
+])
 const goTopCompleteCb = () => { }
 </script>
 
 <template>
-  <DynamicCard :shape="0"></DynamicCard>
+  <TakingPictures></TakingPictures>
+  <DynamicCard :shape="0" :cardList="cardList"></DynamicCard>
   <!-- <YuanWar></YuanWar> -->
   <!-- <starry-sky :stars-count="888"
               :distance="1000" /> -->
