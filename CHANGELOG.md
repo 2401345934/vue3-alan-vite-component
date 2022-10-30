@@ -1,4 +1,4 @@
-## <small>1.0.26 (2022-10-30)</small>
+## <small>1.0.27 (2022-10-30)</small>
 
 * ✨新增: index.html 格式调整 ([f769afa](https://github.com/2401345934/vue3-alan-vite-component/commit/f769afa))
 * ✨新增(custom): 修改 vite 配置 ([0ccb107](https://github.com/2401345934/vue3-alan-vite-component/commit/0ccb107))
@@ -19,6 +19,7 @@
 * ✨新增(packages): 修复圆圆战争导入 ([e7adec2](https://github.com/2401345934/vue3-alan-vite-component/commit/e7adec2))
 * ✨新增(packages): codeBackgroundWall 背景墙组件 ([81e3fa6](https://github.com/2401345934/vue3-alan-vite-component/commit/81e3fa6))
 * ✨新增(packages): monorepo升级 ([e1ea8e8](https://github.com/2401345934/vue3-alan-vite-component/commit/e1ea8e8))
+* ✨新增(packages): takingPictures 拍照组件 ([61feae3](https://github.com/2401345934/vue3-alan-vite-component/commit/61feae3))
 * ✨新增(packages/DigitalScroll): 引入 ts ([9579d53](https://github.com/2401345934/vue3-alan-vite-component/commit/9579d53))
 * 🐛修复(custom): 修复 button bug ([f4713d3](https://github.com/2401345934/vue3-alan-vite-component/commit/f4713d3))
 * 🐛修复(package): 修复打包后其他项目引入报错 ([6dcc934](https://github.com/2401345934/vue3-alan-vite-component/commit/6dcc934))

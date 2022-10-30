@@ -1,4 +1,8 @@
-
+<script >
+export default {
+  alanComponentName: "TakingPictures",
+};
+</script>
 <script setup>
 import { reactive, onMounted } from 'vue';
 
