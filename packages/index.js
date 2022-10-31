@@ -7,12 +7,13 @@ import DynamicCard from "./DynamicCard"
 import TakingPictures from "./TakingPictures"
 import TherMometer from "./TherMometer"
 import YuanWar from "./YuanWar"
+import VideoRecording from "./VideoRecording"
 import "./styles/index.scss"
 
 //按需引入
-export { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer , YuanWar, DynamicCard, TakingPictures};
+export { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer , YuanWar, DynamicCard, TakingPictures, VideoRecording};
 
-const components = [StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, DynamicCard, TakingPictures];
+const components = [StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, DynamicCard, TakingPictures, VideoRecording];
 
 const install = (App) => {
   components.forEach((item) => {

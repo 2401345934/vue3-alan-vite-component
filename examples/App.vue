@@ -1,5 +1,5 @@
 <script setup>
-import { StarrySky, DynamicCard,DigitalScroll, TakingPictures, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar } from '../packages/index';
+import { VideoRecording,StarrySky, DynamicCard,DigitalScroll, TakingPictures, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar } from '../packages/index';
 import { ref } from 'vue';
 
 const cardList = ref([
@@ -20,7 +20,8 @@ const goTopCompleteCb = () => { }
 </script>
 
 <template>
-  <TakingPictures></TakingPictures>
+  <!-- <VideoRecording></VideoRecording> -->
+  <!-- <TakingPictures></TakingPictures> -->
   <DynamicCard :shape="0" :cardList="cardList"></DynamicCard>
   <!-- <YuanWar></YuanWar> -->
   <!-- <starry-sky :stars-count="888"
