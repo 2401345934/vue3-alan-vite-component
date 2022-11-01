@@ -146,8 +146,8 @@ onMounted(() => {
     }
     _moveHandler(e: MouseEvent) {
       const clientRect = canvas.getClientRects()[0];
-      const x = e.pageX - clientRect.x;
-      const y = e.pageY - clientRect.y;
+      const x = e.pageX - clientRect?.x;
+      const y = e.pageY - clientRect?.y;
       this.x = x;
       this.y = y;
       this.angle = computeAngle(x - 200, y - 200);
