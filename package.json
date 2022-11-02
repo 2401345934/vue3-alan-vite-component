@@ -1,7 +1,7 @@
 {
   "name": "@xiaomh/vue3-alan-vite-component",
   "private": false,
-  "version": "1.0.30",
+  "version": "1.0.31",
   "keywords": [
     "xmh-cli-test"
   ],
@@ -10,7 +10,8 @@
     "build": "vite build",
     "commit": "npm run changelog && git add . && git cz ",
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0",
-    "prepublish": "npm run build",
+    "version": "zx bump.mjs",
+    "prepublish": "npm run version && npm run build",
     "publish": "npm publish",
     "preview": "vite preview",
     "prepare": "husky install"
@@ -43,6 +44,8 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "prompts": "^2.4.2",
+    "zx": "^7.1.1",
     "sass": "^1.55.0",
     "sass-loader": "^13.1.0",
     "vite": "^2.9.9"
