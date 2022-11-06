@@ -1,6 +1,6 @@
 <script setup>
-import { VideoRecording,StarrySky, Spotlight, Clocks, DynamicCard,DigitalScroll, TakingPictures, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar } from '../packages/index';
-import { ref } from 'vue';
+import { VideoRecording, DrawImage,StarrySky, Spotlight, Clocks, DynamicCard,DigitalScroll, TakingPictures, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar } from '../packages/index';
+import { ref ,reactive} from 'vue';
 
 const cardList = ref([
   {
@@ -17,10 +17,52 @@ const cardList = ref([
   },
 ])
 const goTopCompleteCb = () => { }
+
+const reactiveProps = reactive({
+  renderList: [
+      {
+        type: 'image',
+        src: '/examples/assets/zj-bg.jpeg',
+        width: 500,
+        height: 500,
+        x: 0,
+        y: 0
+      },
+      {
+        type: 'image',
+        src: '/examples/assets/hongbao.png',
+        clipCircle: true,
+        clipLineWidth: 10,
+        clipStrokeStyle: '#ffffff',
+        width: 60,
+        height: 60,
+        x: 180,
+        y: 20
+      },
+      {
+        type: 'text',
+        text: '我的名字我的名字',
+        align: 'center',
+        fontSize: 20,
+        fillStyle: '#333',
+        x: 100,
+        y: 120
+      },
+      {
+        type: 'image',
+        src: '/examples/assets/clock.png',
+        width: 80,
+        height: 80,
+        x: 0,
+        y: 150
+      }
+    ]
+})
 </script>
 
 <template>
-  <Spotlight></Spotlight>
+  <DrawImage :renderList="reactiveProps.renderList"></DrawImage>
+  <!-- <Spotlight></Spotlight> -->
   <!-- <Clocks></Clocks> -->
   <!-- <VideoRecording></VideoRecording> -->
   <!-- <TakingPictures></TakingPictures> -->

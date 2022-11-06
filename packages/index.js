@@ -10,12 +10,13 @@ import YuanWar from "./YuanWar"
 import Clocks from "./Clocks"
 import VideoRecording from "./VideoRecording"
 import Spotlight from "./Spotlight"
+import DrawImage from "./DrawImage"
 import "./styles/index.scss"
 
 //按需引入
-export { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer , YuanWar, DynamicCard, TakingPictures, VideoRecording,Clocks, Spotlight};
+export { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer , YuanWar, DynamicCard, TakingPictures, VideoRecording,Clocks, Spotlight, DrawImage};
 
-const components = [StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, DynamicCard, TakingPictures, VideoRecording,Clocks, Spotlight];
+const components = [StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, DynamicCard, TakingPictures, VideoRecording,Clocks, Spotlight, DrawImage];
 
 const install = (App) => {
   components.forEach((item) => {
