@@ -1,8 +1,3 @@
-<script lang="ts">
-export default {
-  alanComponentName: "DrawImage",
-};
-</script>
 <script setup name="DrawImage" lang="ts">
 import { onMounted, ref } from 'vue';
 import { useDrawImage } from "../../Shard"
@@ -20,8 +15,8 @@ const props = defineProps({
     type: Number,
     default: () => 5,
   },
-  renderList:{
-    type:Array,
+  renderList: {
+    type: Array,
     default: () => [],
 
   }
@@ -30,7 +25,7 @@ onMounted(() => {
   new useDrawImage({
     el: cvs.value,
     bl: props.bl,
-    renderList:props.renderList
+    renderList: props.renderList
   })
 });
 const download = () => {

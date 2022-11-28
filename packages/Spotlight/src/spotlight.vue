@@ -1,8 +1,3 @@
-<script >
-export default {
-  alanComponentName: "Spotlight",
-};
-</script>
 <script setup name="Spotlight" >
 import { onMounted } from 'vue';
 const props = defineProps({
@@ -55,4 +50,5 @@ onMounted(() => {
 </template>
 
 <style scoped lang="scss">
+
 </style>

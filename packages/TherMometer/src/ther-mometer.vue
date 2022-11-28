@@ -1,8 +1,3 @@
-<script >
-export default {
-  alanComponentName: "TherMometer",
-};
-</script>
 <script setup name="TherMometer" >
 //  max: 60,//刻度最大值
 //  min: 0,//刻度最小值 (默认为0,不为0的情况暂未考虑，可根据文中思路自行修改)
@@ -15,7 +10,7 @@ const props = defineProps({
   },
   data: {
     type: Object,
-    default: () => {},
+    default: () => { },
     required: true,
   },
 });
@@ -37,33 +32,26 @@ for (let i = 0; i < 5; i++) {
   <section class="container flex-row j_c">
     <div class="container-box">
       <div class="box-lines">
-        <div
-          v-for="(item, index) in stepList"
-          :key="index"
-          class="line-item flex-row j_b"
-        >
+        <div v-for="(item, index) in stepList"
+             :key="index"
+             class="line-item flex-row j_b">
           <div class="left">{{ item }}</div>
           <div class="right">{{ item }}</div>
         </div>
       </div>
       <div class="box-pan">
         <div class="box-shadow"></div>
-        <div
-          :class="[
-            'bottom-circle',
-            show && (data.value >= 0 ? 'active' : 'trans'),
-          ]"
-        ></div>
-        <div class="bottom-center" v-show="data.value >= 0">
-          <div
-            :class="['active', currPer >= 0.94 && 'br', show && 'trans']"
-            :style="{ '--per': currPer < 1 ? currPer : 1 }"
-          >
-            <div
-              :class="['bottom-warn', currPer >= 0.94 && 'br']"
-              v-show="data.value > data.warn"
-              :style="{ '--per': warnPer < 1 ? warnPer : 1 }"
-            ></div>
+        <div :class="[
+          'bottom-circle',
+          show && (data.value >= 0 ? 'active' : 'trans'),
+        ]"></div>
+        <div class="bottom-center"
+             v-show="data.value >= 0">
+          <div :class="['active', currPer >= 0.94 && 'br', show && 'trans']"
+               :style="{ '--per': currPer < 1 ? currPer : 1 }">
+            <div :class="['bottom-warn', currPer >= 0.94 && 'br']"
+                 v-show="data.value > data.warn"
+                 :style="{ '--per': warnPer < 1 ? warnPer : 1 }"></div>
           </div>
         </div>
       </div>
@@ -74,23 +62,28 @@ for (let i = 0; i < 5; i++) {
 
 <style scoped lang="scss">
 .flex-row {
-    display       : flex;
-    flex-direction: row;
-    align-items   : center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
 .j_c {
-    justify-content: center;
+  justify-content: center;
 }
+
 .j_b {
-    justify-content: space-between;
+  justify-content: space-between;
 }
+
 .container {
   font-size: 16px;
   color: #ffffff;
   height: 280px;
   width: 300px;
+
   &-box {
     position: relative;
+
     .box-pan {
       background: url("xx/xx温度计底盘背景") no-repeat;
       background-size: 100% 100%;
@@ -100,15 +93,14 @@ for (let i = 0; i < 5; i++) {
       left: calc(50% - 42px);
       top: -2px;
       z-index: 1;
+
       &::before {
         content: "";
         width: 4px;
         height: 105px;
-        background: linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0.34) 0%,
-          rgba(255, 255, 255, 0.12) 100%
-        );
+        background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.34) 0%,
+            rgba(255, 255, 255, 0.12) 100%);
         border-radius: 2px;
         opacity: 0.31;
         position: absolute;
@@ -116,6 +108,7 @@ for (let i = 0; i < 5; i++) {
         top: 21px;
         z-index: 13;
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -124,13 +117,12 @@ for (let i = 0; i < 5; i++) {
         width: 6px;
         height: 119px;
         border-radius: 20px 0 20px 10px;
-        background: linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0.82) 0%,
-          rgba(255, 255, 255, 0) 100%
-        );
+        background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.82) 0%,
+            rgba(255, 255, 255, 0) 100%);
         z-index: 13;
       }
+
       .box-shadow {
         position: absolute;
         width: 23px;
@@ -141,6 +133,7 @@ for (let i = 0; i < 5; i++) {
         left: 20px;
         z-index: 13;
       }
+
       .bottom-circle {
         position: absolute;
         width: 70px;
@@ -152,12 +145,15 @@ for (let i = 0; i < 5; i++) {
         z-index: 11;
         transition: all 2.5s;
         transition-delay: 0.8s;
+
         &.trans {
           height: 45px;
         }
+
         &.active {
           height: 75px;
         }
+
         &::after {
           content: "";
           width: 60px;
@@ -170,6 +166,7 @@ for (let i = 0; i < 5; i++) {
           border-radius: 50%;
         }
       }
+
       .bottom-center {
         width: 36px;
         height: 135px; //满高
@@ -178,6 +175,7 @@ for (let i = 0; i < 5; i++) {
         left: calc(50% - 18px);
         filter: blur(1px);
         z-index: 10;
+
         .active {
           width: 100%;
           height: 0;
@@ -187,14 +185,13 @@ for (let i = 0; i < 5; i++) {
           background: linear-gradient(90deg, #fde44d 0%, #e8a901 100%);
           transition: all 2.5s;
           transition-delay: 2.2s;
+
           .bottom-warn {
             width: 42px;
             height: 0;
-            background: linear-gradient(
-              180deg,
-              #e80000 0%,
-              rgba(254, 100, 100, 0) 100%
-            );
+            background: linear-gradient(180deg,
+                #e80000 0%,
+                rgba(254, 100, 100, 0) 100%);
             filter: blur(1px);
             position: absolute;
             top: 0;
@@ -204,32 +201,39 @@ for (let i = 0; i < 5; i++) {
             transition-delay: 2.2s;
           }
         }
+
         .trans {
           height: calc(var(--per) * 100%);
           box-shadow: 0px 1px 5px 3px #f4ca2b;
+
           .bottom-warn {
             height: calc(135px * var(--per));
             box-shadow: 0px -5px 5px 0px rgba(231, 0, 0, 0.74);
           }
         }
+
         .br {
           border-radius: 16px 16px 0 0;
         }
       }
     }
+
     .box-lines {
       .line-item {
         font-size: 12px;
         line-height: 17px;
         margin-bottom: 13px;
+
         &:last-child {
           margin-bottom: 0;
         }
+
         .left {
           margin-right: 118px;
           min-width: 25px;
           text-align: right;
           position: relative;
+
           &::after {
             content: "";
             width: 19px;
@@ -241,10 +245,12 @@ for (let i = 0; i < 5; i++) {
             right: -25px;
           }
         }
+
         .right {
           min-width: 25px;
           text-align: left;
           position: relative;
+
           &::after {
             content: "";
             width: 19px;
@@ -259,6 +265,7 @@ for (let i = 0; i < 5; i++) {
       }
     }
   }
+
   &-title {
     margin-left: 15px;
     font-size: 24px;
@@ -266,6 +273,7 @@ for (let i = 0; i < 5; i++) {
     color: #f2af33;
     line-height: 31px;
     position: relative;
+
     text {
       font-size: 12px;
     }

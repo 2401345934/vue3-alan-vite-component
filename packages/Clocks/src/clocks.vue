@@ -1,8 +1,3 @@
-<script >
-export default {
-  alanComponentName: "Clocks",
-};
-</script>
 <script setup name="Clocks" >
 import { onMounted } from 'vue';
 const props = defineProps({
@@ -242,8 +237,11 @@ onMounted(() => {
 </script>
 
 <template>
-   <canvas id="canvas" :width="width" :height="height"></canvas>
+  <canvas id="canvas"
+          :width="width"
+          :height="height"></canvas>
 </template>
 
 <style scoped lang="scss">
+
 </style>

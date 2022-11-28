@@ -1,4 +1,3 @@
-
 <script>
 import { useRandomRgbColor } from "../../Shard"
 export default {
@@ -16,7 +15,7 @@ export default {
       default: 1
     },
     // 是否需要键盘控制
-    isKeyboardControl:{
+    isKeyboardControl: {
       type: Boolean,
       default: false
     }
@@ -27,8 +26,8 @@ export default {
       cards: []
     };
   },
-  watch:{
-    shape: function(){
+  watch: {
+    shape: function () {
       this.initData()
     }
   },
@@ -96,10 +95,10 @@ export default {
     keyboardDeal (e) {
       if (document.activeElement !== document.body) return;
       const keyMap = new Map([
-        [38,'addIndex'],
-        [40,'lessIndex'],
-        [37,'lessIndex'],
-        [39,'addIndex'],
+        [38, 'addIndex'],
+        [40, 'lessIndex'],
+        [37, 'lessIndex'],
+        [39, 'addIndex'],
       ])
       keyMap.get(e.keyCode) && this[keyMap.get(e.keyCode)]()
     },
@@ -117,7 +116,7 @@ export default {
              :key="index"
              :style="styles"
              @click="activeIndex = activeIndex === index ? -1 : index">
-          <span class="text-span">{{cardList[index].text}}</span>
+          <span class="text-span">{{ cardList[index].text }}</span>
         </div>
       </div>
     </div>
@@ -164,6 +163,7 @@ export default {
     .text-span {
       margin: 0 20px;
     }
+
     &.is-list {
       animation: reject ease-in-out 0.4s;
 

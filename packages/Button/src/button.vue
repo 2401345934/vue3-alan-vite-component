@@ -1,8 +1,3 @@
-<script lang="ts">
-export default {
-  alanComponentName: "AlanButton",
-};
-</script>
 <script setup name="AlanButton" lang="ts">
 defineProps({
   type: {
@@ -36,8 +31,7 @@ defineProps({
 
 <template>
   <button :disabled="disabled"
-          :class="['btn', block && 'block', disabled && 'disabled' , type]"
-          >
+          :class="['btn', block && 'block', disabled && 'disabled', type]">
     <slot></slot>
   </button>
 </template>

@@ -1,8 +1,3 @@
-<script lang="ts">
-export default {
-  alanComponentName: "AlanBackTop",
-};
-</script>
 <script setup name="AlanBackTop" lang="ts">
 import { useSlots, onMounted, onBeforeUnmount, ref, } from 'vue';
 import { useThrottle, useGetScrollPosition, useScrollToTop } from "../../Shard"

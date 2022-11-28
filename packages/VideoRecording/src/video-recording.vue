@@ -1,10 +1,5 @@
-<script >
-export default {
-  alanComponentName: "VideoRecording",
-};
-</script>
-<script setup >
-import {  onMounted } from 'vue';
+<script setup name="VideoRecording" >
+import { onMounted } from 'vue';
 import { useRecordingVideo } from '../../Shard';
 onMounted(() => {
   new useRecordingVideo()

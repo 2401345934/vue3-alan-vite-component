@@ -1,19 +1,14 @@
-<script lang="ts" >
-export default {
-  alanComponentName: "YuanWar",
-};
-</script>
 <script setup name="YuanWar" lang="ts" >
 import { onMounted } from 'vue';
 const props = defineProps({
-	width: {
-		type: Number,
-		default: () => 800,
-	},
-	height: {
-		type: Number,
-		default: () => 800,
-	},
+  width: {
+    type: Number,
+    default: () => 800,
+  },
+  height: {
+    type: Number,
+    default: () => 800,
+  },
 });
 
 onMounted(() => {

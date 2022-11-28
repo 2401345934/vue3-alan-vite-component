@@ -1,16 +1,11 @@
-<script >
-export default {
-  alanComponentName: "TakingPictures",
-};
-</script>
-<script setup>
+<script setup name="TakingPictures">
 import { reactive, onMounted } from 'vue';
 
 const props = defineProps({
-	autoGetCompetence: {
-		type: Boolean,
-		default: false,
-	},
+  autoGetCompetence: {
+    type: Boolean,
+    default: false,
+  },
 });
 const state = reactive({
   videoWidth: 250,
