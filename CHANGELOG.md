@@ -1,4 +1,4 @@
-## <small>1.1.1 (2022-11-28)</small>
+## <small>1.1.3 (2022-11-28)</small>
 
 * ✨新增: index.html 格式调整 ([f769afa](https://github.com/2401345934/vue3-alan-vite-component/commit/f769afa))
 * ✨新增(custom): 修改 vite 配置 ([0ccb107](https://github.com/2401345934/vue3-alan-vite-component/commit/0ccb107))
@@ -21,6 +21,7 @@
 * ✨新增(packages): 新增BackTop ([b9a9f70](https://github.com/2401345934/vue3-alan-vite-component/commit/b9a9f70))
 * ✨新增(packages): 修复 圆圆战争到处 ([ccf0ce9](https://github.com/2401345934/vue3-alan-vite-component/commit/ccf0ce9))
 * ✨新增(packages): 修复圆圆战争导入 ([e7adec2](https://github.com/2401345934/vue3-alan-vite-component/commit/e7adec2))
+* ✨新增(packages): 组件新增插件支持 setup写name ([6468709](https://github.com/2401345934/vue3-alan-vite-component/commit/6468709))
 * ✨新增(packages): codeBackgroundWall 背景墙组件 ([81e3fa6](https://github.com/2401345934/vue3-alan-vite-component/commit/81e3fa6))
 * ✨新增(packages): drawImage 合并图片组件 ([6761b13](https://github.com/2401345934/vue3-alan-vite-component/commit/6761b13))
 * ✨新增(packages): monorepo升级 ([e1ea8e8](https://github.com/2401345934/vue3-alan-vite-component/commit/e1ea8e8))

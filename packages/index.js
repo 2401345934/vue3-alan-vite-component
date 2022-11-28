@@ -20,7 +20,7 @@ const components = [StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, Al
 
 const install = (App) => {
   components.forEach((item) => {
-    App.component(item.alanComponentName, item);
+    App.component(item.name, item);
   });
 };
 
