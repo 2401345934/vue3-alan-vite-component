@@ -1,4 +1,4 @@
-## <small>1.1.3 (2022-11-28)</small>
+## <small>1.1.4 (2022-12-05)</small>
 
 * ✨新增: index.html 格式调整 ([f769afa](https://github.com/2401345934/vue3-alan-vite-component/commit/f769afa))
 * ✨新增(custom): 修改 vite 配置 ([0ccb107](https://github.com/2401345934/vue3-alan-vite-component/commit/0ccb107))
@@ -12,6 +12,7 @@
 * ✨新增(package): 修改 md ([c609134](https://github.com/2401345934/vue3-alan-vite-component/commit/c609134))
 * ✨新增(package): 增加 Button 组件 ([7d191c1](https://github.com/2401345934/vue3-alan-vite-component/commit/7d191c1))
 * ✨新增(packages): 更新拍照组件 1.0.27 ([d91bdd3](https://github.com/2401345934/vue3-alan-vite-component/commit/d91bdd3))
+* ✨新增(packages): 更新依赖 setup 无需写两个script 表示name ([932ea09](https://github.com/2401345934/vue3-alan-vite-component/commit/932ea09))
 * ✨新增(packages): 新增 1.0.20 版本 温度计组件 ([30be00e](https://github.com/2401345934/vue3-alan-vite-component/commit/30be00e))
 * ✨新增(packages): 新增 prepublish 每次 publish 之前自动 build ([1fa3129](https://github.com/2401345934/vue3-alan-vite-component/commit/1fa3129))
 * ✨新增(packages): 新增 Spotlight 手电筒组件 ([58f3085](https://github.com/2401345934/vue3-alan-vite-component/commit/58f3085))
@@ -32,6 +33,7 @@
 * 0.1.3版本发布 ([b09708d](https://github.com/2401345934/vue3-alan-vite-component/commit/b09708d))
 * 更新md ([0c4ca78](https://github.com/2401345934/vue3-alan-vite-component/commit/0c4ca78))
 * 修改提交代码配置 ([65dda81](https://github.com/2401345934/vue3-alan-vite-component/commit/65dda81))
+* 修改md ([ac84247](https://github.com/2401345934/vue3-alan-vite-component/commit/ac84247))
 * 组件库初始化 ([94ced8b](https://github.com/2401345934/vue3-alan-vite-component/commit/94ced8b))
 
 
