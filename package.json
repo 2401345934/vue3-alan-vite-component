@@ -13,7 +13,7 @@
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0",
     "version": "zx bump.mjs",
     "prepublish": "npm run version && npm run build",
-    "publish": "npm run commit && npm run release-it",
+    "publish": "npm run commit && npm run release",
     "preview": "vite preview",
     "prepare": "husky install"
   },

@@ -28,6 +28,7 @@
 * ✨新增(packages): monorepo升级 ([e1ea8e8](https://github.com/2401345934/vue3-alan-vite-component/commit/e1ea8e8))
 * ✨新增(packages): takingPictures 拍照组件 ([61feae3](https://github.com/2401345934/vue3-alan-vite-component/commit/61feae3))
 * ✨新增(packages/DigitalScroll): 引入 ts ([9579d53](https://github.com/2401345934/vue3-alan-vite-component/commit/9579d53))
+* ✨新增(public): 新增自动化发布 ([def05d9](https://github.com/2401345934/vue3-alan-vite-component/commit/def05d9))
 * 🐛修复(custom): 修复 button bug ([f4713d3](https://github.com/2401345934/vue3-alan-vite-component/commit/f4713d3))
 * 🐛修复(package): 修复打包后其他项目引入报错 ([6dcc934](https://github.com/2401345934/vue3-alan-vite-component/commit/6dcc934))
 * 0.1.3版本发布 ([b09708d](https://github.com/2401345934/vue3-alan-vite-component/commit/b09708d))
