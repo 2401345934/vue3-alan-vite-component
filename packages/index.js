@@ -11,12 +11,13 @@ import Clocks from "./Clocks"
 import VideoRecording from "./VideoRecording"
 import Spotlight from "./Spotlight"
 import DrawImage from "./DrawImage"
+import CanvasAutograph from './CanvasAutograph'
 import "./styles/index.scss"
 
 //按需引入
-export { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer , YuanWar, DynamicCard, TakingPictures, VideoRecording,Clocks, Spotlight, DrawImage};
+export { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, DynamicCard, TakingPictures, VideoRecording, Clocks, Spotlight, DrawImage, CanvasAutograph };
 
-const components = [StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, DynamicCard, TakingPictures, VideoRecording,Clocks, Spotlight, DrawImage];
+const components = [StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, DynamicCard, TakingPictures, VideoRecording, Clocks, Spotlight, DrawImage, CanvasAutograph];
 
 const install = (App) => {
   components.forEach((item) => {

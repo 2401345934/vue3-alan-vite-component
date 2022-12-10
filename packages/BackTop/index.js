@@ -1,7 +1,7 @@
 import BackTop from "./src/back-top.vue"
 
 BackTop.install = (App) => {
-	App.component(BackTop.alanComponentName, BackTop);
+  App.component(BackTop.name, BackTop);
 };
 
 export default BackTop;

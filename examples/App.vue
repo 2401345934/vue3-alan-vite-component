@@ -1,5 +1,5 @@
 <script setup>
-import { VideoRecording, DrawImage,StarrySky, Spotlight, Clocks, DynamicCard,DigitalScroll, TakingPictures, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar } from '../packages/index';
+import { VideoRecording, DrawImage,StarrySky, Spotlight, Clocks, DynamicCard,DigitalScroll, TakingPictures, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar ,CanvasAutograph} from '../packages/index';
 import { ref ,reactive} from 'vue';
 
 const cardList = ref([
@@ -61,7 +61,8 @@ const reactiveProps = reactive({
 </script>
 
 <template>
-  <DrawImage :renderList="reactiveProps.renderList"></DrawImage>
+  <CanvasAutograph></CanvasAutograph>
+  <!-- <DrawImage :renderList="reactiveProps.renderList"></DrawImage> -->
   <!-- <Spotlight></Spotlight> -->
   <!-- <Clocks></Clocks> -->
   <!-- <VideoRecording></VideoRecording> -->

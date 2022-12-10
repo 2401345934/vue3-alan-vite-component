@@ -1,7 +1,7 @@
 import TherMometer from "./src/ther-mometer.vue"
 
 TherMometer.install = (App) => {
-	App.component(TherMometer.alanComponentName, TherMometer);
+  App.component(TherMometer.name, TherMometer);
 };
 
 export default TherMometer;

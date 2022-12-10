@@ -1,7 +1,7 @@
 <script>
 import { useRandomRgbColor } from "../../Shard"
 export default {
-  alanComponentName: "DynamicCard",
+  name: "DynamicCard",
   props: {
     cardList: {
       type: Array,

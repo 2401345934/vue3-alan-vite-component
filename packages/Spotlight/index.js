@@ -1,7 +1,7 @@
 import Spotlight from './src/spotlight.vue';
 
 Spotlight.install = (App) => {
-	App.component(Spotlight.alanComponentName, Button);
+  App.component(Spotlight.name, Button);
 };
 
 export default Spotlight;
