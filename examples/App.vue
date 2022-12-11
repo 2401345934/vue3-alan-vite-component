@@ -1,73 +1,75 @@
 <script setup>
-import { VideoRecording, DrawImage,StarrySky, Spotlight, Clocks, DynamicCard,DigitalScroll, TakingPictures, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer,YuanWar ,CanvasAutograph} from '../packages/index';
-import { ref ,reactive} from 'vue';
+import { VideoRecording, DrawImage, StarrySky, Spotlight, Clocks, DynamicCard, DigitalScroll, TakingPictures, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, CanvasAutograph, RedPacketRain } from '../packages/index';
+import { ref, reactive } from 'vue';
 
 const cardList = ref([
   {
-    text:'哈喽哈喽哈喽哈喽1'
+    text: '哈喽哈喽哈喽哈喽1'
   },
   {
-    text:'哈喽哈喽哈喽哈喽2'
+    text: '哈喽哈喽哈喽哈喽2'
   },
   {
-    text:'哈喽哈喽哈喽哈喽21'
+    text: '哈喽哈喽哈喽哈喽21'
   },
   {
-    text:'哈喽哈喽哈喽哈喽31'
+    text: '哈喽哈喽哈喽哈喽31'
   },
 ])
 const goTopCompleteCb = () => { }
 
 const reactiveProps = reactive({
   renderList: [
-      {
-        type: 'image',
-        src: '/examples/assets/zj-bg.jpeg',
-        width: 500,
-        height: 500,
-        x: 0,
-        y: 0
-      },
-      {
-        type: 'image',
-        src: '/examples/assets/hongbao.png',
-        clipCircle: true,
-        clipLineWidth: 10,
-        clipStrokeStyle: '#ffffff',
-        width: 60,
-        height: 60,
-        x: 180,
-        y: 20
-      },
-      {
-        type: 'text',
-        text: '我的名字我的名字',
-        align: 'center',
-        fontSize: 20,
-        fillStyle: '#333',
-        x: 100,
-        y: 120
-      },
-      {
-        type: 'image',
-        src: '/examples/assets/clock.png',
-        width: 80,
-        height: 80,
-        x: 0,
-        y: 150
-      }
-    ]
+    {
+      type: 'image',
+      src: '/examples/assets/zj-bg.jpeg',
+      width: 500,
+      height: 500,
+      x: 0,
+      y: 0
+    },
+    {
+      type: 'image',
+      src: '/examples/assets/hongbao.png',
+      clipCircle: true,
+      clipLineWidth: 10,
+      clipStrokeStyle: '#ffffff',
+      width: 60,
+      height: 60,
+      x: 180,
+      y: 20
+    },
+    {
+      type: 'text',
+      text: '我的名字我的名字',
+      align: 'center',
+      fontSize: 20,
+      fillStyle: '#333',
+      x: 100,
+      y: 120
+    },
+    {
+      type: 'image',
+      src: '/examples/assets/clock.png',
+      width: 80,
+      height: 80,
+      x: 0,
+      y: 150
+    }
+  ]
 })
 </script>
 
 <template>
+  <RedPacketRain></RedPacketRain>
   <CanvasAutograph></CanvasAutograph>
   <!-- <DrawImage :renderList="reactiveProps.renderList"></DrawImage> -->
   <!-- <Spotlight></Spotlight> -->
   <!-- <Clocks></Clocks> -->
   <!-- <VideoRecording></VideoRecording> -->
   <!-- <TakingPictures></TakingPictures> -->
-  <DynamicCard :shape="0" :cardList="cardList"></DynamicCard>
+  <DynamicCard :shape="0"
+               :cardList="cardList"></DynamicCard>
   <!-- <YuanWar></YuanWar> -->
   <!-- <starry-sky :stars-count="888"
               :distance="1000" /> -->

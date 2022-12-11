@@ -18,6 +18,7 @@ const props = defineProps({
 });
 
 let canvas = null
+let ctx = null
 onMounted(() => {
   // 获取canvas 实例
   canvas = refs.value
@@ -27,7 +28,7 @@ onMounted(() => {
   // 设置一个边框
   canvas.style.border = '1px solid #000'
   // 创建上下文
-  const ctx = canvas.getContext('2d')
+  ctx = canvas.getContext('2d')
 
   // 设置填充背景色
   ctx.fillStyle = 'transparent'
