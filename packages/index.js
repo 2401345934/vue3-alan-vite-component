@@ -13,10 +13,11 @@ import Spotlight from "./Spotlight"
 import DrawImage from "./DrawImage"
 import CanvasAutograph from './CanvasAutograph'
 import RedPacketRain from "./RedPacketRain"
+import Utils from "./Utils"
 import "./styles/index.scss"
 
 //按需引入
-export { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, DynamicCard, TakingPictures, VideoRecording, Clocks, Spotlight, DrawImage, CanvasAutograph, RedPacketRain };
+export { StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, DynamicCard, TakingPictures, VideoRecording, Clocks, Spotlight, DrawImage, CanvasAutograph, RedPacketRain, Utils };
 
 const components = [StarrySky, DigitalScroll, AlanButton, CodeBackgroundWall, AlanBackTop, TherMometer, YuanWar, DynamicCard, TakingPictures, VideoRecording, Clocks, Spotlight, DrawImage, CanvasAutograph, RedPacketRain];
 
@@ -26,4 +27,4 @@ const install = (App) => {
   });
 };
 
-export default { install };
+export default { install, Utils };
