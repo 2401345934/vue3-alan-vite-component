@@ -62,6 +62,7 @@ const reactiveProps = reactive({
 onMounted(() => {
   let waterMark = new Utils.WaterMark(['水印文字哈哈哈哈', '2022-12-08'], ['img', 'img2'])
   waterMark.startWaterMark();
+
 })
 </script>
 
@@ -71,6 +72,13 @@ onMounted(() => {
     <div style="width: 300px;height: 300px;background-color:aqua;"
          id="img"
          src=""
+         class="aaa"
+         @click="() => {
+           Utils.useToggleFullscreen({
+             fullscreenFlag: false,
+             className: 'aaa'
+           })
+         }"
          alt=""></div>
     <img style="width: 300px;height: 300px;background-color:aqua;"
          id="img2"
