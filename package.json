@@ -33,26 +33,26 @@
   "main": "lib/vue3-alan-vite-component.umd.js",
   "module": "lib/vue3-alan-vite-component.es.js",
   "dependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^17.1.0",
-    "@release-it/conventional-changelog": "^5.1.1",
-    "@vitejs/plugin-vue": "^2.3.3",
-    "commitizen": "^4.2.5",
-    "commitlint": "^17.1.2",
+    "@commitlint/config-conventional": "^17.8.0",
+    "@release-it/conventional-changelog": "^7.0.2",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "commitizen": "^4.3.0",
+    "commitlint": "^17.8.0",
     "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.1",
+    "prettier": "^3.0.3",
     "prompts": "^2.4.2",
-    "release-it": "^15.5.1",
-    "sass": "^1.55.0",
-    "sass-loader": "^13.1.0",
-    "vite": "^2.9.9",
+    "release-it": "^16.2.1",
+    "sass": "^1.69.3",
+    "sass-loader": "^13.3.2",
+    "vite": "^4.4.11",
     "vite-plugin-vue-setup-extend": "^0.4.0",
-    "zx": "^7.1.1"
+    "zx": "^7.2.3"
   }
 }

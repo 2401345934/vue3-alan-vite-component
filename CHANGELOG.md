@@ -1,5 +1,7 @@
-## <small>1.2.2 (2022-12-11)</small>
+## <small>1.2.3 (2023-10-17)</small>
 
+* ✨新增(packages): 新增公用方法 ([4fbc485](https://github.com/2401345934/vue3-alan-vite-component/commit/4fbc485))
+* 发布最新版本 ([775e973](https://github.com/2401345934/vue3-alan-vite-component/commit/775e973))
 
 
 
